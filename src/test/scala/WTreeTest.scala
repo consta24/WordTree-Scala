@@ -4,10 +4,6 @@ import Main._
 
 class WTreeTest extends munit.FunSuite {
 
-  test("Valid profile id:"+profileID){
-    assert(profileID > 0)
-  }
-
   test("split: Simple split test"){
     val s = 'T' :: 'h' :: 'i' :: 's' :: ' ' :: 'i' :: 's' :: ' ' :: 'a' :: ' ' :: 't' :: 'e' :: 's' :: 't' :: Nil
     assert(split(s) == List(List('T','h','i','s'), List('i', 's'), List('a'), List('t','e','s','t')))
